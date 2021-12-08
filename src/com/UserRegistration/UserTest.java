@@ -10,11 +10,11 @@ public class UserTest {
 		// TODO Auto-generated method stub
 		Scanner z = new Scanner(System.in);
 		System.out.println("-------Wellcome to UserRegistration-------");
-		System.out.print("Enter User FirstName:");
+		System.out.print("Enter User FullName:");
 		String  name = z.nextLine();
-		
-		User firstname = new User();
-		firstname.FirstName(name);
+		//Function calling for 
+		User FullName = new User();
+		FullName.FULLNAME(name);
 			
 			z.close();
 		

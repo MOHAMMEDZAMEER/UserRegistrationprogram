@@ -5,13 +5,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class User {
-	/*** UC-1 :- As a User need to enter a valid First Name. ***/
+	/*** UC-1 :- As a User need to enter a valid FullName. ***/
 	
-	final String FIRST_NAME = "^[A-Z][a-z]{3,}$" ; //User FirstName Start caps
-	
-	public void FirstName(String name){
+	 final String FullName= "^[A-Z][a-z]{2,}(\\s)?[A-Z][a-z]{2,}$";//User Enter FullName Starting with Caps
+
+	public void FULLNAME(String name){
 		
-		Pattern pattern = Pattern.compile(FIRST_NAME);
+		Pattern pattern = Pattern.compile(FullName);
 		Matcher match = pattern.matcher(name);
 		System.out.println(match.matches());
 				
